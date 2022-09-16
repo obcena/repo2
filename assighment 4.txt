@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="en-us">
+        <meta content="text/html; charset=utf-8"
+        http-equiv="content-type">
+        <title>Assignment4</title>
+        <meta content="HTML5 form" name="keywords">
+        <meta content="HTML document, online evaluation form for CE" name="description">
+        <link href="assignment4.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+<div id="allPage">
+
+    <header>
+        <h1>
+        <!-- <img alt="banner for the page" src="assignment4 banner1.jpg" height="123" width="980px" >
+        
+            CENTENNIAL COLLEGE <br>
+            Continuing Education Course / Instructor Evaluation
+        -->
+        </h1>
+
+    </header>      
+    
+    <form action="mailto:jdoe@ceentennialcollege.ca" method=" post">
+        <!--option lang to. nakapublic kasi kaya email na lang gamitin   <form action="http://studentweb.cencol.ca/pgignac/results.php" method=" get"> -->
+      
+    <fieldset>
+        <legend> Personal Information </legend>
+
+            <p>
+                <label for="txtFName"> First Name: </label>
+                <input id="txtFName" name="FName" type="text" size="25" required="required" tabindex="1">
+            </p>
+            <p>
+                <label for="txtLName"> Last Name : </label>
+                <input id="txtLName" name="txtLName" type="text" size="25" required="required" tabindex="3">
+            </p>
+            <p>
+                <label for="txtEmail"> Email:</label>
+                <input id="txtEmail" name="txtEmail" type="email" placeholder="someone@someplace.ca" required="required" tabindex="7">
+            </p>
+
+
+            <p> <label for="txtPWD"> Create Password: </label>
+                <input id="txtPWD" name="txtPWD"
+                type="password" size="16" tabindex="9">
+            </p>
+
+            <p>
+                <label for="txtConfirmPWD"> Confirm Password :</label>
+                <input id="txtConfirmPWD" name="txtConfirmPWD" type="password" size="16" tabindex="9">
+            </p>
+            <p>
+                <label for="optM"> Gender: </label>
+                <input id="optM" name="optGender" type="radio" value="M" tabindex="11"> M
+                <input id="optF" name="optGender" type="radio" value="F" tabindex="13"> F
+            </p>
+
+            <p>
+                <label for="txtColor"> Favourite Colour :</label>
+                <input id="txtColor" name="txtColor" type="color" size="25"
+                tabindex="14">
+
+            </p>
+
+</fieldset>
+<fieldset>
+    <legend> Education Information </legend>
+    <p>
+        <label for="optEdSec">Education : </label>
+
+        <input id="optEdSec" name="optEd" type="radio" value="Sec" tabindex="15"> Secondary
+        <input id="optEdCol" name="optEd" type="radio" value="Col" tabindex="17"> College
+        
+        <input name="optEd" type="radio" value="Ugrad" tabindex="19"> Undergraduate
+        <input name="optEd" type="radio" value="Grad" tabindex="21"> Graduate
+        <input name="optEd" type="radio" value="PGrad" tabindex="23"> PostGraduate
+
+    </p>
+
+    <p>
+        <label for="chkOS"> Computer Knowledge :</label>
+        
+        <input id="chkOS" name="chkOS" type="checkbox" value="OS" tabindex="27"> OS
+        <input id="chkNet" name="chkNet" type="checkbox" value="Net" tabindex="27">Networking
+        <input id="chkProg" name="chkProg" type="checkbox" value="Net" tabindex="27">Programming
+        <input id="chkWeb" name="chkWeb" type="checkbox" value="Net" tabindex="27">Web
+        <input name="chkDB" type="checkbox" value="DB" tabindex="33">Databases
+    </p>
+
+    <p>
+        <label for="1stCourses"> Choose Courses: </label>
+
+        <select id="1stCourses" name="1stCourses" multiple="multiple" size="4" tabindex="35">
+            <option value="Comp100"> Comp100 Programming 1</option>
+            <option value="Comp215"> Comp215 Client Side Web Development </option>
+            <option value="Comp213"> Comp 213 Web Interface Design </option>
+            <option value="Comp229"> Comp229 Server Side Development </option>
+            <option value="GNED500"> GNED500 Global Citizenship </option>
+        </select>
+    </p>
+
+    <p>
+        <label for="txtStartDate"> Start Date: </label>
+        <input id="txtStartDate" name="txtStartDate" type="date" tabindex="36">
+    </p>
+
+    <p>
+        <label for="txtSpecialReq"> Special Requirements:</label>
+        <textarea id="txtSpecialReq" cols="50" name="txtSpecialReq" rows="7"  tabindex="37" 
+        placeholder="--- Please let us know about any special services you may require (e.g. assistive typing, note taking, etc.)---">
+    </textarea>
+        
+    </p>
+</fieldset>
+    <p>
+        <input name="btnSubmit" tabindex="39" type="submit" value="Submit Registration">
+        <input name="btnReset" tabindex="41" type="reset" value="Clear Form">
+    </p>
+    </form>
+    <footer>
+        <p id="copyright"> &copy; Copyright Centennial College - Comp 213 - Week 10 - HTML Forms</p>
+    </footer>
+</div>
+</body>
+</html>
+
